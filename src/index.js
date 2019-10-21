@@ -87,6 +87,7 @@ class FlickityTransformer {
    * @param  {Integer} i  Element index
    */
   applyTransforms (slide, i) {
+    this.cellElements = this.flickity.getCellElements();
     const el = this.cellElements[i]
     const txs = []
     let xPos
